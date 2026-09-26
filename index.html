@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="tg">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Арзиши тахминии лоиҳаи вебро ҳисоб кунед." />
+    <meta name="theme-color" content="#0b1020" />
+    <title>Ҳисобкунаки арзиши лоиҳа</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="./" aria-label="Ҳисобкунаки лоиҳа">
+        <span class="brand-mark" aria-hidden="true">U</span>
+        <span>UMAR.DEV</span>
+      </a>
+      <span class="topbar-label">ҲИСОБКУНАКИ ЛОИҲА</span>
+    </header>
+
+    <main>
+      <section class="intro" aria-labelledby="page-title">
+        <span class="eyebrow">Банақшагирии лоиҳа</span>
+        <h1 id="page-title">Арзиши идеяи худро <span>ҳисоб кунед</span></h1>
+        <p>Навъи лоиҳа ва имкониятҳои лозимиро интихоб кунед, то нарху муҳлати тахминиро бинед.</p>
+      </section>
+
+      <section class="calculator" aria-label="Ҳисоб кардани арзиши лоиҳа" data-estimator>
+        <form class="calculator-form">
+          <div class="step">
+            <span class="step-number" aria-hidden="true">01</span>
+            <div class="field">
+              <label for="project-type">Навъи лоиҳа</label>
+              <select id="project-type" name="type">
+                <option value="landing" data-base="299" data-days="5">Landing page</option>
+                <option value="business" data-base="499" data-days="10">Сайти ширкатӣ</option>
+                <option value="shop" data-base="799" data-days="15">Мағозаи онлайн</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="step">
+            <span class="step-number" aria-hidden="true">02</span>
+            <div class="field">
+              <label for="page-count">Шумораи саҳифаҳо <output id="page-count-value" for="page-count">4</output></label>
+              <input id="page-count" name="pages" type="range" min="1" max="12" value="4" />
+              <div class="range-labels"><span>1 саҳифа</span><span>12 саҳифа</span></div>
+            </div>
+          </div>
+
+          <fieldset class="step options">
+            <legend><span class="step-number" aria-hidden="true">03</span><span>Иловаҳои лоиҳа</span></legend>
+            <label class="option">
+              <input type="checkbox" name="feature" value="payment" data-price="180" data-days="3" />
+              <span class="option-copy"><strong>Пардохти онлайн</strong><small>Пайвасти бехатари пардохт</small></span>
+              <span class="option-price">+$180</span>
+            </label>
+            <label class="option">
+              <input type="checkbox" name="feature" value="motion" data-price="120" data-days="2" />
+              <span class="option-copy"><strong>Аниматсияҳои махсус</strong><small>Ҳаракати нарм ва интерактивӣ</small></span>
+              <span class="option-price">+$120</span>
+            </label>
+            <label class="option">
+              <input type="checkbox" name="feature" value="seo" data-price="95" data-days="2" />
+              <span class="option-copy"><strong>Омодасозии SEO</strong><small>Сохтори техникӣ барои ҷустуҷӯ</small></span>
+              <span class="option-price">+$95</span>
+            </label>
+          </fieldset>
+        </form>
+
+        <aside class="result" aria-live="polite" aria-atomic="true">
+          <span class="result-label">НАТИҶАИ ТАХМИНӢ</span>
+          <h2>Нақшаи лоиҳа</h2>
+          <p class="result-caption">Арзиши тахминӣ</p>
+          <p class="result-price" id="estimate-price">$445–$603</p>
+          <div class="divider"></div>
+          <div class="result-detail"><span>Муҳлати кор</span><strong id="estimate-days">7–9 рӯзи корӣ</strong></div>
+          <div class="result-detail"><span>Саҳифаҳо</span><strong id="estimate-pages">4</strong></div>
+          <p class="result-note">Нарх ва муҳлат тахминӣ мебошанд ва метавонанд баъди муҳокимаи талабот тағйир ёбанд.</p>
+        </aside>
+      </section>
+    </main>
+
+    <footer>UMAR.DEV <span>Ҳисобкунаки арзиши лоиҳа</span></footer>
+    <script src="script.js"></script>
+  </body>
+</html>

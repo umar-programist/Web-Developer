@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="tg">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Арзиши тахминии лоиҳаи веби худро бо ҳисобкунаки UMAR.DEV муайян кунед." />
+    <title>Ҳисобкунаки лоиҳа | UMAR.DEV</title>
+    <link rel="stylesheet" href="style.css?v=20260926" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a href="index2.html" class="brand"><span class="brand-mark">U</span><span>UMAR.DEV</span></a>
+        <button class="nav-toggle" aria-label="Кушодани меню" aria-expanded="false">☰</button>
+        <nav class="nav-menu">
+          <a href="index2.html">Асосӣ</a>
+          <a href="about.html">Дар бораи мо</a>
+          <a href="services.html">Хизматҳо</a>
+          <a href="portfolio.html">Портфолио</a>
+          <a href="pricing.html">Нарх</a>
+          <a href="calculator.html" class="active" aria-current="page">Ҳисобкунак</a>
+          <a href="team.html">Гурӯҳ</a>
+          <a href="testimonials.html">Шикоятҳо</a>
+          <a href="blog.html">Блог</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contact.html">Контакт</a>
+        </nav>
+        <a href="contact.html" class="btn btn-primary">Биёед гуфтан</a>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <section class="page-banner calculator-banner">
+        <div class="container">
+          <span class="eyebrow">Банақшагирии лоиҳа</span>
+          <h1>Арзиши идеяи худро <span class="accent">ҳисоб кунед</span></h1>
+          <p class="subtitle">Чанд интихоб кунед ва нарху муҳлати тахминиро фавран бинед.</p>
+        </div>
+      </section>
+
+      <section class="section calculator-section">
+        <div class="container calculator-layout" data-estimator>
+          <form class="calculator-form">
+            <div class="calculator-step">
+              <span class="calculator-step-number">01</span>
+              <div class="calculator-field">
+                <label for="project-type">Навъи лоиҳа</label>
+                <select id="project-type" name="type">
+                  <option value="landing" data-base="299" data-days="5">Landing page</option>
+                  <option value="business" data-base="499" data-days="10">Сайти ширкатӣ</option>
+                  <option value="shop" data-base="799" data-days="15">Мағозаи онлайн</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="calculator-step">
+              <span class="calculator-step-number">02</span>
+              <div class="calculator-field">
+                <label for="page-count">Шумораи саҳифаҳо <output id="page-count-value" for="page-count">4</output></label>
+                <input id="page-count" name="pages" type="range" min="1" max="12" value="4" />
+                <div class="range-labels"><span>1 саҳифа</span><span>12 саҳифа</span></div>
+              </div>
+            </div>
+
+            <fieldset class="calculator-step calculator-options">
+              <legend><span class="calculator-step-number">03</span><span>Иловаҳои лоиҳа</span></legend>
+              <label class="calculator-option">
+                <input type="checkbox" name="feature" value="shop" data-price="180" data-days="3" />
+                <span class="option-copy"><strong>Пардохти онлайн</strong><small>Пайвасти бехатари пардохт</small></span>
+                <span class="option-price">+$180</span>
+              </label>
+              <label class="calculator-option">
+                <input type="checkbox" name="feature" value="motion" data-price="120" data-days="2" />
+                <span class="option-copy"><strong>Аниматсияҳои махсус</strong><small>Ҳаракати нарм ва интерактивӣ</small></span>
+                <span class="option-price">+$120</span>
+              </label>
+              <label class="calculator-option">
+                <input type="checkbox" name="feature" value="seo" data-price="95" data-days="2" />
+                <span class="option-copy"><strong>Омодасозии SEO</strong><small>Сохтори техникӣ барои ҷустуҷӯ</small></span>
+                <span class="option-price">+$95</span>
+              </label>
+            </fieldset>
+          </form>
+
+          <aside class="estimate-panel" aria-live="polite" aria-atomic="true">
+            <span class="estimate-kicker">НАТИҶАИ ТАХМИНӢ</span>
+            <h2>Нақшаи лоиҳа</h2>
+            <p class="estimate-caption">Арзиши тахминӣ</p>
+            <p class="estimate-price" id="estimate-price">$445–$603</p>
+            <div class="estimate-divider"></div>
+            <div class="estimate-detail"><span>Муҳлати кор</span><strong id="estimate-days">7–9 рӯзи корӣ</strong></div>
+            <div class="estimate-detail"><span>Саҳифаҳо</span><strong id="estimate-pages">4</strong></div>
+            <a class="btn btn-primary estimate-cta" href="contact.html">Муҳокимаи лоиҳа <span aria-hidden="true">↗</span></a>
+            <small class="estimate-note">Нарх ва муҳлат баъди муҳокимаи талабот дақиқ мешаванд.</small>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <div><strong>UMAR.DEV</strong><p>Лоиҳаи хуб аз нақшаи равшан оғоз мешавад.</p></div>
+        <div><a href="contact.html">Тамос бо мо</a></div>
+      </div>
+    </footer>
+
+    <script src="script.js?v=20260926"></script>
+  </body>
+</html>
